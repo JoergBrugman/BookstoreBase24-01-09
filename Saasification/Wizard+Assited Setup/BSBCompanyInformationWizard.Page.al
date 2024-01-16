@@ -130,11 +130,11 @@ page 50103 "BSB Company Information Wizard"
     var
         CompanyInformation: Record "Company Information";
     begin
-        Init();
+        Rec.Init();
         if CompanyInformation.Get() then
-            TransferFields(CompanyInformation);
+            Rec.TransferFields(CompanyInformation);
 
-        Insert();
+        Rec.Insert();
 
         Step := Step::Start;
         EnableControls();
