@@ -32,4 +32,8 @@ tableextension 50100 "BSB Customer" extends Customer
             CalcFormula = lookup("BSB Book".Description where("No." = field("BSB Favorite Book No.")));
         }
     }
+    keys
+    {
+        key(BSB1; "BSB Favorite Book No.") { }
+    }
 }
