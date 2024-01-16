@@ -2,3 +2,4 @@
 .vscode/rad.json
 .alcache
 .altemplates
+*.g.xlf
